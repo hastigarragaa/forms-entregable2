@@ -1,0 +1,16 @@
+<h2>Listado de Alumnos</h2>
+
+<div class="botones">
+  <button (click)="mostrarTodos()">Mostrar Todos</button>
+  <button (click)="mostrarAprobados()">Mostrar Aprobados</button>
+  <button (click)="mostrarDesaprobados()">Mostrar Desaprobados</button>
+</div>
+
+<ul>
+  <li *ngFor="let alumno of alumnosFiltrados" [appHighlight]="alumno.aprobado">
+    <strong>{{ alumno.nombre | uppercase }}</strong>
+    {{ alumno.apellido }} - Edad: {{ alumno.edad }}
+    <span>({{ alumno.aprobado ? 'APROBADO' : 'DESAPROBADO' }})</span>
+  </li>
+  
+</ul>
