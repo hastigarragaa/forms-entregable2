@@ -17,5 +17,5 @@ import { ReactiveFormsModule } from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Entrega Final - Astigarraga';
+  title = 'Formulario y Lista de Alumnos';
 }
